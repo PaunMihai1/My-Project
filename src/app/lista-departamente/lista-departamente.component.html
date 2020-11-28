@@ -1,0 +1,31 @@
+<div class="mat-elevation-z8 data-table">
+  <table mat-table class="full-width-table" matSort aria-label="Elements">
+    <!-- Id Column -->
+    <ng-container matColumnDef="id" class="table-row">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Id</th>
+      <td mat-cell *matCellDef="let persoana">{{persoana.id}}</td>
+    </ng-container>
+
+    <!-- Nume si Prenume Column -->
+    <ng-container matColumnDef="NumesiPrenume" class="table-row">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Nume si Prenume</th>
+      <td mat-cell *matCellDef="let persoana" (click)="onSelect(persoana)"><a style="cursor:pointer; text-decoration: none; color: black;">{{persoana.NumesiPrenume}}</a></td>
+    </ng-container>
+
+    <!-- Punctaj Column -->
+    <ng-container matColumnDef="punctaj" class="table-row">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Punctaj</th>
+      <td mat-cell *matCellDef="let persoana">{{persoana.punctaj}}</td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+
+  <mat-paginator #paginator
+      [length]="dataSource?.data.length"
+      [pageIndex]="0"
+      [pageSize]="50"
+      [pageSizeOptions]="[25, 50, 100, 250]">
+  </mat-paginator>
+</div>

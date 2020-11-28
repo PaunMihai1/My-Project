@@ -1,0 +1,27 @@
+[
+{
+    "id": 1,
+    "NumesiPrenume": "Paun Mihai",
+    "punctaj": 10
+},
+{
+    "id": 2,
+    "NumesiPrenume": "Enache Andrei",
+    "punctaj": 10
+},
+{
+    "id": 3,
+    "NumesiPrenume": "David Mihai",
+    "punctaj": 10
+},
+{
+    "id": 4,
+    "NumesiPrenume": "Marginean Matei",
+    "punctaj": 10
+},
+{
+    "id": 5,
+    "NumesiPrenume": "Edy Marin",
+    "punctaj": 10
+}
+]

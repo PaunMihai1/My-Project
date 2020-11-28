@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.selectat {
+  color: blue;
+}
+
+.return-btn {
+  border-radius: 5px;
+  background-color: rgb(202, 202, 202);
+  padding: 10px 25px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 0px 20px 0px 20px;
+}

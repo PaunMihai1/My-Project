@@ -1,0 +1,22 @@
+nav a {
+  border-radius: 5px;
+  background-color: rgb(202, 202, 202);
+  padding: 10px 25px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 0px 20px 0px 20px;
+}
+
+.navigatie {
+  margin: 30px 20px 30px 50px;
+}
+
+nav a:hover {
+  color: blue;
+}
+
+nav a.active {
+  color: blue;
+}
